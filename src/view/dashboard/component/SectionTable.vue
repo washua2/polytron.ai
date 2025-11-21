@@ -31,7 +31,7 @@
                         <div class="pt-[0.8125rem] pl-[1.1875rem] pr-[1.75rem] pb-[0.6875rem] border-b-[0.125rem] border-[#E5E7EB] flex items-center" v-for="(v,i) in item.cameras" :key="i">
                             <SvgIcon width="0.9375rem" height="0.875rem" icon="cctv" />
                             <div class="h-[1rem] justify-start text-[#09090B] text-[0.875rem] font-['medium'] ml-[0.5625rem] leading-[130%]">{{ v.name }}</div>
-                            <div class="w-[0.5rem] h-[0.5rem] rounded-full  ml-[2.375rem]" :class="v.status === 'online' ? 'bg-[#1EA262]' : 'bg-[#DF872E]'"></div>
+                            <div class="w-[0.5rem] h-[0.5rem] rounded-full  ml-[2rem]" :class="v.status === 'online' ? 'bg-[#1EA262]' : 'bg-[#DF872E]'"></div>
                         </div>
                         
                     </div>
