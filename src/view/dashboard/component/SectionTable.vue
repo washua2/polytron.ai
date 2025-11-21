@@ -26,7 +26,7 @@
                         <div class="w-[8.8125rem] text-center justify-start text-[#606067] text-[0.75rem] font-['medium']">Visit Duration</div>
                     </div>
                 </div>
-                <div class="w-[11.9375rem] h-[12.3125rem]">
+                <div class="w-[11.9375rem] h-[12.3125rem] overflow-y-auto scroll">
                     <div>
                         <div class="pt-[0.8125rem] pl-[1.1875rem] pr-[1.75rem] pb-[0.6875rem] border-b-[0.125rem] border-[#E5E7EB] flex items-center" v-for="(v,i) in item.cameras" :key="i">
                             <SvgIcon width="0.9375rem" height="0.875rem" icon="cctv" />
@@ -61,6 +61,9 @@ const allSectionData = {
       totalVisitors: 365,
       visitDuration: 25,
       cameras: [
+        { name: "Camera139", status: "online" },
+        { name: "Camera138", status: "online" },
+        { name: "Camera137", status: "online" },
         { name: "Camera139", status: "online" },
         { name: "Camera138", status: "online" },
         { name: "Camera137", status: "online" }
