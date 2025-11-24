@@ -25,7 +25,7 @@
                                 {{ timeStr}}</div>
                         </div>
                         <!-- live 3D -->
-                        <div class=" absolute bottom-[5rem] left-[0.75rem]">
+                        <div class=" absolute bottom-[4.375rem] left-[0.75rem]">
                             <div class="w-[2.25rem] h-[1rem] relative bg-zinc-700/90 rounded-[4.8125rem]">
                                 <div
                                     class="left-[0.2275rem] top-[0.0994rem] absolute justify-start text-white text-[0.5rem] font-['Roboto']">

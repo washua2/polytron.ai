@@ -84,27 +84,33 @@ const allSectionData = {
       visitDuration: 25,
       cameras: [
         { name: "B001-192.168.128.51", status: "online" },
-        { name: "B002-192.168.128.58", status: "online" },
+        { name: "B002-192.168.128.52", status: "online" },
+        { name: "B003-192.168.128.53", status: "online" },
+        { name: "B003-192.168.128.54", status: "online" },
+        { name: "B003-192.168.128.55", status: "online" },
+        { name: "B003-192.168.128.56", status: "online" },
+        { name: "B003-192.168.128.57", status: "online" },
+        { name: "B003-192.168.128.58", status: "online" },
         { name: "B003-192.168.128.59", status: "online" },
       ]
     },
-    {
-      title: "Wellness",
-      totalVisitors: 280,
-      visitDuration: 65,
-      cameras: [
-        { name: "B004-192.168.128.60", status: "online" },
-        { name: "B005-192.168.128.68", status: "warning" }
-      ]
-    },
-    {
-      title: "Services",
-      totalVisitors: 190,
-      visitDuration: 16,
-      cameras: [
-        { name: "B006-192.168.128.69", status: "online" }
-      ]
-    }
+    // {
+    //   title: "Wellness",
+    //   totalVisitors: 280,
+    //   visitDuration: 65,
+    //   cameras: [
+    //     { name: "B004-192.168.128.60", status: "online" },
+    //     { name: "B005-192.168.128.68", status: "warning" }
+    //   ]
+    // },
+    // {
+    //   title: "Services",
+    //   totalVisitors: 190,
+    //   visitDuration: 16,
+    //   cameras: [
+    //     { name: "B006-192.168.128.69", status: "online" }
+    //   ]
+    // }
   ],
   1: [
     {
@@ -112,8 +118,12 @@ const allSectionData = {
       totalVisitors: 450,
       visitDuration: 30,
       cameras: [
-        { name: "B006-192.168.128.69", status: "online" },
-        { name: "B006-192.168.128.69", status: "warning" }
+        { name: "B006-192.168.128.60", status: "warning" },
+        { name: "B006-192.168.128.61", status: "online" },
+        { name: "B006-192.168.128.62", status: "online" },
+        { name: "B006-192.168.128.63", status: "online" },
+        { name: "B006-192.168.128.64", status: "online" },
+        { name: "B006-192.168.128.65", status: "online" },
       ]
     }
   ],
@@ -123,7 +133,16 @@ const allSectionData = {
       totalVisitors: 210,
       visitDuration: 22,
       cameras: [
-        { name: "B006-192.168.128.69", status: "online" }
+        { name: "B006-192.168.128.66", status: "online" },
+        { name: "B006-192.168.128.67", status: "online" },
+        { name: "B006-192.168.128.68", status: "online" },
+        { name: "B006-192.168.128.69", status: "online" },
+        { name: "B006-192.168.128.70", status: "online" },
+        { name: "B006-192.168.128.71", status: "online" },
+        { name: "B006-192.168.128.72", status: "online" },
+        { name: "B006-192.168.128.73", status: "online" },
+        { name: "B006-192.168.128.74", status: "online" },
+        { name: "B006-192.168.128.75", status: "online" },
       ]
     }
   ]
