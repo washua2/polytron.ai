@@ -85,7 +85,7 @@ const allSectionData = {
       cameras: [
         { name: "B001-192.168.128.51", status: "online" },
         { name: "B002-192.168.128.58", status: "online" },
-        { name: "B003-192.168.128.50", status: "online" },
+        { name: "B003-192.168.128.59", status: "online" },
       ]
     },
     {
