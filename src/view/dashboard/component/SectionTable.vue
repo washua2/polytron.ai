@@ -84,8 +84,8 @@ const allSectionData = {
       visitDuration: 25,
       cameras: [
         { name: "B001-192.168.128.51", status: "online" },
-        { name: "B001-192.168.128.58", status: "online" },
-        { name: "B001-192.168.128.50", status: "online" },
+        { name: "B002-192.168.128.58", status: "online" },
+        { name: "B003-192.168.128.50", status: "online" },
       ]
     },
     {
@@ -93,8 +93,8 @@ const allSectionData = {
       totalVisitors: 280,
       visitDuration: 65,
       cameras: [
-        { name: "B001-192.168.128.60", status: "online" },
-        { name: "B001-192.168.128.68", status: "warning" }
+        { name: "B004-192.168.128.60", status: "online" },
+        { name: "B005-192.168.128.68", status: "warning" }
       ]
     },
     {
