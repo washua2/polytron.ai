@@ -1,8 +1,8 @@
 <template>
   <div
-    class="w-full fhd:h-[17.5rem] qhd:h-[17.5rem] uhd:h-[17.5rem] h-[8.125rem] overflow-hidden border-[0.125rem] border-[#E5E7EB] mt-[1.5rem]">
+    class="w-full fhd:h-[15.3125rem] qhd:h-[15.3125rem] uhd:h-[15.3125rem] h-[8.125rem] overflow-hidden border-[0.125rem] border-[#E5E7EB] mt-[0.625rem]">
     <!-- header -->
-    <div>
+    <!-- <div>
       <div class="h-[2.6875rem] flex items-center px-[1.25rem] gap-[2rem] border-b-[0.125rem] border-[#E5E7EB]">
         <div class="py-[0.75rem] cursor-pointer"
           :class="count == index ? 'border-b-[0.125rem] border-[#3F83F8] text-[#3F83F8]' : 'border-b-[0.125rem] border-white/0  text-[#09090B]'"
@@ -10,36 +10,29 @@
           <div class="h-[1.1875rem] justify-start  text-[1rem] font-['medium']">{{ item.title }}</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- main -->
     <div class="pr-[0.3125rem]">
 
       <div
-        class="p-[1.25rem] pr-[0.9375rem] flex items-start gap-[1.25rem] fhd:h-full qhd:h-full uhd:h-full h-[5.625rem] overflow-y-auto scroll">
+        class="p-[1.25rem] pr-[0.9375rem] flex items-start gap-[1.25rem] fhd:h-full qhd:h-full uhd:h-full h-[7.5rem] overflow-y-auto scroll">
         <div class="w-[26rem] flex items-start border-[0.125rem] border-[#E5E7EB] rounded-[0.375rem]"
           v-for="(item, index) in sectionList" :key="index">
           <div class="w-[8.8125rem] h-[12.3125rem] pt-[0.75rem] border-r-[0.125rem] border-[#E5E7EB]">
             <div class="w-[8.8125rem] flex items-center justify-center flex-wrap">
-              <!-- <SvgIcon width="1.3125rem" height="1.3125rem" icon="services" /> -->
-              <!-- <div class="w-[8.8125rem] mt-[0.75rem] text-center justify-start text-[#09090B] text-[0.875rem] font-['medium']">{{ item.title }}</div> -->
-              <!-- <div class="w-full mt-[0.625rem] mb-[0.625rem] border-b-[0.125rem] border-[#E5E7EB]"></div> -->
-              <div class="w-[8.8125rem] h-[5rem] flex items-center justify-center flex-wrap">
-                <div class="w-[8.8125rem] h-[2.5rem] flex items-center justify-center flex-wrap">
+              <SvgIcon width="1.3125rem" height="1.3125rem" icon="services" />
+              <div class="w-[8.8125rem] mt-[0.75rem] text-center justify-start text-[#09090B] text-[0.875rem] font-['medium']">{{ item.title }}</div>
+              <div class="w-full mt-[0.625rem] mb-[0.625rem] border-b-[0.125rem] border-[#E5E7EB]"></div>
                 <div class="w-[8.8125rem] text-center justify-start text-[#09090B] text-[0.875rem] font-['bold']">{{
                   item.totalVisitors }}</div>
                 <div class="w-[8.8125rem] text-center justify-start text-[#606067] text-[0.75rem] font-['medium']">Total
                   visitors</div>
-                  </div>
-              </div>
-                <div class="w-full h-[0.0625rem] bg-[#E5E7EB]"></div>
-              <div class="w-[8.8125rem] h-[5.4375rem] flex items-center justify-center flex-wrap">
                 <div class="w-[8.8125rem] h-[2.5rem] flex items-center justify-center flex-wrap">
                 <div
                   class="w-[8.8125rem] mt-[1.125rem] text-center justify-start text-[#09090B] text-[0.875rem] font-['bold']">
                   {{ item.visitDuration }} mins</div>
                 <div class="w-[8.8125rem] text-center justify-start text-[#606067] text-[0.75rem] font-['medium']">Visit
                   Duration</div>
-              </div>
               </div>
             </div>
           </div>
@@ -79,7 +72,7 @@ const headerList = ref([
 const allSectionData = {
   0: [
     {
-      title: "Medical Services",
+      title: "Section A",
       totalVisitors: 365,
       visitDuration: 25,
       cameras: [
@@ -114,7 +107,7 @@ const allSectionData = {
   ],
   1: [
     {
-      title: "F&B",
+      title: "Section B",
       totalVisitors: 450,
       visitDuration: 30,
       cameras: [
@@ -129,7 +122,7 @@ const allSectionData = {
   ],
   2: [
     {
-      title: "Medical Centre",
+      title: "Section C",
       totalVisitors: 210,
       visitDuration: 22,
       cameras: [
@@ -149,11 +142,11 @@ const allSectionData = {
 }
 
 // 当前展示的数据
-const sectionList = ref(allSectionData[count.value])
+const sectionList = ref([allSectionData[0][0], allSectionData[1][0], allSectionData[2][0]])
 
 // 监听 count，自动切换 sectionList
 watch(count, (val) => {
-  sectionList.value = allSectionData[val]
+  sectionList.value = [allSectionData[0], allSectionData[1], allSectionData[2]]
 })
 
 const handlerSelect = (index) => {

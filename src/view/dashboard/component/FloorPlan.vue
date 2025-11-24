@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[37.125rem]">
+    <div class="h-[38.1rem] fhd:h-[40.28rem] qhd:h-[40.28rem] uhd:h-[40.28rem]">
         <div class="flex item-center justify-between">
             <div class="w-[8.5rem] h-[4.25rem]">
                 <img src="@/assets/images/logo.png" class="w-full h-full" alt="">

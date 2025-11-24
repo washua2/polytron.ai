@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- cctv -->
-        <div class="w-full mt-[1.25rem]">
-            <div class="video-grid h-[35.875rem]" :style="{
+        <div class="w-full mt-[0.625rem]">
+            <div class="video-grid fhd:h-[39.65rem] qhd:h-[39.65rem] uhd:h-[39.65rem] h-[37.5rem]" :style="{
                 gridTemplateColumns: `repeat(${cols}, 1fr)`
             }">
 
@@ -166,6 +166,6 @@ onMounted(() => {
 .video-grid {
     display: grid;
     grid-auto-rows: 1fr;
-    gap: 0.25rem;
+    gap: 0.125rem;
 }
 </style>
