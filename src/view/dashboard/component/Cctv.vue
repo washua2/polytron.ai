@@ -25,7 +25,7 @@
                                 {{ timeStr}}</div>
                         </div>
                         <!-- live 3D -->
-                        <div class=" absolute bottom-[4.375rem] left-[0.75rem]">
+                        <div class=" absolute bottom-[3.9375rem] left-[0.75rem]">
                             <div class="w-[2.25rem] h-[1rem] relative bg-zinc-700/90 rounded-[4.8125rem]">
                                 <div
                                     class="left-[0.2275rem] top-[0.0994rem] absolute justify-start text-white text-[0.5rem] font-['Roboto']">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <!-- title -->
-                        <div class=" absolute bottom-[1.0625rem] left-[0.75rem] z-10">
+                        <div class=" absolute bottom-[0.75rem] left-[0.75rem] z-10">
                             <div
                                 class="justify-start text-white text-[0.875rem] font-['medium'] [text-shadow:_0rem_0.25rem_0.75rem_rgb(0_0_0_/_0.60)]">
                                 {{ item.name }}</div>
