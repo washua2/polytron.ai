@@ -82,7 +82,7 @@
                     </div>
                     <div class="w-[6.0625rem] px-[0.75rem] py-[0.375rem] flex items-center justify-center cursor-pointer relative z-[10]"
                         @click="handlerTarget">
-                        <div class="justify-start text-[#52525B] text-[0.875rem] font-['medium']"
+                        <div class="justify-start text-[0.875rem] font-['medium']"
                             :class="isTarget ? 'text-[#52525B]' : 'text-[#09090B]'">CCTV</div>
                     </div>
                     <div class="w-[6.0625rem] h-[2rem] px-[0.75rem] py-[0.375rem] bg-[#fff] absolute transition-all duration-300 ease-in-out"
